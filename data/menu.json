@@ -31,7 +31,8 @@
             "Small": 1.50,
             "Medium": 1.65,
             "Large": 1.85
-          }
+          },
+          "flavors": ["Coca Cola", "Diet Coke", "7 Up", "Pink Lemonade", "Unsweetened Tea", "Dr. Pepper", "Barg's Root Beer"]
         },
         {
           "name": "Milkshake",
