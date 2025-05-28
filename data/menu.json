@@ -20,7 +20,7 @@
       "fries": [
         {
           "name": "French Fries",
-          "price": 2.10,
+          "price": 2.99,
           "description": "Freshly cut potatoes, cooked in 100% sunflower oil"
         }
       ],
@@ -29,8 +29,8 @@
           "name": "Soft Drink",
           "sizes": {
             "Small": 1.50,
-            "Medium": 1.65,
-            "Large": 1.85
+            "Medium": 1.75,
+            "Large": 1.99
           },
           "flavors": ["Coca Cola", "Diet Coke", "7 Up", "Pink Lemonade", "Unsweetened Tea", "Dr. Pepper", "Barg's Root Beer"]
         },

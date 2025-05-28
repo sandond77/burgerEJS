@@ -4,6 +4,8 @@ const port = 3000;
 const menu = require('./data/menu.json');
 
 app.use(express.urlencoded({ extended: true }));
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/views');
 
 app.get('/', (req, res) => {
 	res.send('Welcome to Not In-n-Out Burger Menu');
