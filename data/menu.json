@@ -1,0 +1,67 @@
+{
+    "menu": {
+      "burgers": [
+        {
+          "name": "Hamburger",
+          "price": 2.80,
+          "description": "Fresh beef patty with lettuce, tomato, onion, and spread on a freshly baked bun"
+        },
+        {
+          "name": "Cheeseburger",
+          "price": 3.15,
+          "description": "Hamburger with a slice of American cheese"
+        },
+        {
+          "name": "Double-Double",
+          "price": 4.50,
+          "description": "Two beef patties, two slices of American cheese, lettuce, tomato, onion, and spread"
+        }
+      ],
+      "fries": [
+        {
+          "name": "French Fries",
+          "price": 2.10,
+          "description": "Freshly cut potatoes, cooked in 100% sunflower oil"
+        }
+      ],
+      "drinks": [
+        {
+          "name": "Soft Drink",
+          "sizes": {
+            "Small": 1.50,
+            "Medium": 1.65,
+            "Large": 1.85,
+            "Extra Large": 2.00
+          }
+        },
+        {
+          "name": "Milkshake",
+          "price": 2.50,
+          "flavors": ["Chocolate", "Vanilla", "Strawberry"]
+        },
+        {
+          "name": "Coffee",
+          "price": 1.35
+        }
+      ],
+      "secretMenu": [
+        {
+          "name": "Animal Style Burger",
+          "description": "Beef patty cooked with mustard, pickles, extra spread, grilled onions, lettuce, and tomato"
+        },
+        {
+          "name": "Protein Style",
+          "description": "Burger wrapped in lettuce instead of a bun"
+        },
+        {
+          "name": "4x4",
+          "description": "Four beef patties and four slices of cheese with all the fixings"
+        },
+        {
+          "name": "Animal Style Fries",
+          "description": "Fries topped with melted cheese, spread, and grilled onions"
+        }
+      ]
+    }
+  }
+  
