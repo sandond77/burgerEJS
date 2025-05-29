@@ -1,5 +1,5 @@
 {
-    "burgers": [
+    "mains": [
         {
             "name": "Hamburger",
             "price": 2.99,
@@ -14,6 +14,16 @@
             "name": "Double-Double",
             "price": 4.99,
             "description": "Two beef patties, two slices of American cheese, lettuce, tomato, onion, and spread"
+        },
+        {
+            "name": "French Fries",
+            "price": 2.99,
+            "description": "Freshly cut potatoes, cooked in 100% sunflower oil"
+        },
+        {
+            "name": "Shakes",
+            "price": 2.99,
+            "flavors": ["Chocolate", "Strawberry", "Vanilla"]
         }
     ],
     "fries": [
@@ -25,26 +35,25 @@
     ],
     "drinks": [
         {
-            "name": "Soft Drink",
+            "name": "Soft Drinks",
             "sizes": {
-            "Small": 1.50,
-            "Medium": 1.75,
-            "Large": 2.00,
-            "X-Large": 2.25
+                "Small": 1.50,
+                "Medium": 1.75,
+                "Large": 2.00,
+                "X-Large": 2.25
             },
             "flavors": ["Coca Cola", "Diet Coke", "7 Up", "Pink Lemonade", "Unsweetened Tea", "Dr. Pepper", "Barg's Root Beer"]
         },
         {
-            "name": "Milkshake",
-            "price": 2.99,
-            "flavors": ["Chocolate", "Vanilla", "Strawberry"]
+            "name": "Milk",
+            "price": 1.00
         },
         {
-            "name": "Coffee",
+            "name": "Hot Cocoa",
             "price": 1.75
         },
         {
-            "name": "Hot Chocolate",
+            "name": "Coffee",
             "price": 1.75
         }
     ],
@@ -68,6 +77,23 @@
             "name": "Animal Style Fries",
             "price": 3.99,
             "description": "Fries topped with melted cheese, spread, and grilled onions"
+        }
+    ],
+    "combos": [
+        {
+            "number": 1,
+            "name": "Double-Double Meal",
+            "price": 10.99
+        },
+        {
+            "number": 2,
+            "name": "Cheeseburger Meal",
+            "price": 8.99
+        },
+        {
+            "number": 3,
+            "name": "Hamburger Meal",
+            "price": 7.99
         }
     ]
 }

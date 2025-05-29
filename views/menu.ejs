@@ -1,67 +1,90 @@
 <%- include('./partials/header') -%>
     <div class="row">
-        <div class="col-9 combos">
-            <div class="row text-center">
-                <!-- ejs this area -->
-                <div class="col">Hamburger</div> 
-                <div class="col">Cheeseburger</div>
-                <div class="col">Double-Double</div>
-            </div>
-        </div>
-        <div class="col-3 text-center">
-            Double-Double
-        </div>        
-    </div>
-    <div class="row">
         <!-- use ejs to iterate through food and drink -->
         <div class="col-8">
-            <% burgers.forEach(burger=>{ %>
+            <h2 class="text-center"> Burgers </h2>
+            <% mains.forEach(main=>{ %>
                 <div class="row">
                     <div class="col-8">
-                        <p class="menuLabel"><%- burger.name %></p>
+                        <p class="menuLabel">
+                            <%= main.name %>
+                        </p>
+                        <% if(main.flavors){ %>
+                        <p class="flavors">
+                            <%= main.flavors%>
+                        </p>
+                        <% } %>
                     </div>
-                    <div class="col-4">
-                        <p class="menuLabel"><%- burger.price %></p>
-                    </div>
-                </div>
-                <% }) %>
-        </div>
-        <div class="col-4">
-            <% drinks.forEach(drink=>{ %>
-                <div class="row">
-                    <div class="col-8">
-                        <p class="menuLabel"><%- drink.name %></p>
-                        <% if (drink.flavors){ %>
-                            <div class="row">
-                                <div class="col-6">
-                                    <% drink.flavors.forEach(flavor=> { %>
-                                        <div class="row">
-                                            <div class="col-8">
-                                                <ul>
-                                                    <li id="drinkFlavors"><%- flavor %></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <% }) %>
-                                </div>
-                                <div class="col-6 text-center">
-                                    <% if (drink.sizes){ %>
-                                        <b>Sizes</b>
-                                        <% for(const size in drink.sizes){%>
-                                            <ul>
-                                                <li id="drinkSizes"><%- size %>  $<%- drink.sizes[size] %></li>
-                                            </ul>
-                                        <% }%>
-                                    <%}%>
-                                </div>
-                            </div>
-                        <% }%>
-                    </div>
-                    <div class="col-4">
-                        <p class="menuLabel"><%- drink.price %></p>
+                    <div class="col-4 text-center">
+                        <p class="menuLabel">
+                            <%= main.price.toFixed(2) %>
+                        </p>
                     </div>
                 </div>
             <% }) %>
+        </div>
+        <div class="col-4">
+            <h2 class="text-center"> Beverages </h2>
+            <% drinks.forEach(drink => { %>
+                <div class="row drinks">
+                    <div class="col-8">
+                        <div>
+                            <%= drink.name %>
+                        </div> 
+                        <% if(drink.flavors){%>
+                            <% drink.flavors.forEach(flavor=> { %>
+                                <ul>
+                                    <li class="flavors">
+                                        <%= flavor %>
+                                    </li>
+                                </ul>
+                            <% }) %>
+                        <%}%>
+                    </div>
+                    <div class="col-4">
+                        <div>
+                            <% if(drink.price){ %>
+                            <%= drink.price.toFixed(2) %>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <% if(drink.sizes){ %>
+                            <% const sizes=drink.sizes %>
+                                <div class="row sizes text-center">
+                                    <% for(const size in sizes){%>
+                                        <div class="col">
+                                            <%= size %>
+                                        </div>
+                                    <% } %>
+                                </div>
+                                <div class="row sizes text-center">
+                                    <% for(const price in sizes){%>
+                                        <div class="col">
+                                            <%= sizes[price].toFixed(2) %>
+                                        </div>
+                                    <% } %>
+                                </div>
+                            <%}%>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 combos">
+            <div class="row text-center">
+                <!-- ejs this area -->
+                 <% combos.forEach(combo => { %>
+                    <div class="col"> 
+                        <p><%= combo.name %></p>
+                        <img src="" alt="<%combo.name%>">
+                        <p><%= combo.price %></p>
+                    </div>
+                 <% })%>
+            </div>
         </div>
     </div>
 <%- include('./partials/footer') -%>

@@ -89,9 +89,11 @@ const menu = {
 // 	console.log(menu['burgers']);
 // }
 // console.log(menu['burgers']);
-const burgers = menu['burgers'];
+// const burgers = menu['burgers'];
 
-// console.log(menu['burgers'])
-// console.log(menu['fries']);
-// console.log(menu['drinks']);
-console.log(menu['secretMenu']);
+// // console.log(menu['burgers'])
+// // console.log(menu['fries']);
+// // console.log(menu['drinks']);
+// console.log(menu['secretMenu']);
+
+console.log(menu.drinks.flavors);
