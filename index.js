@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 
 app.get('/', (req, res) => {
-	res.send('Welcome to Not In-n-Out Burger Menu');
+	res.render('./menu.ejs');
 });
 
 app.get('/menu', (req, res) => {

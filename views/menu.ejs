@@ -1,8 +1,20 @@
-<%- include('header'); -%>
-    <h1>
-        Not In n' Out Menu
-    </h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates magni laborum iste nostrum corporis quibusdam ipsam sequi libero id necessitatibus, facere aperiam perspiciatis! Vitae magni placeat veritatis harum debitis fuga?
-    </p>
-<%- include('footer'); -%>
+<%- include('./partials/header') -%>
+    <div class="row">
+        <div class="col-9 combos">
+            <div class="row text-center">
+                <!-- ejs this area -->
+                <div class="col">Hamburger</div> 
+                <div class="col">Cheeseburger</div>
+                <div class="col">Double-Double</div>
+            </div>
+        </div>
+        <div class="col-3 text-center">
+            Double-Double
+        </div>        
+    </div>
+    <div class="row">
+        <!-- use ejs to iterate through food and drink -->
+        <div class="col-8"></div>
+        <div class="col-4"></div>
+    </div>
+    <%- include('./partials/footer') -%>
