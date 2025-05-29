@@ -14,7 +14,54 @@
     </div>
     <div class="row">
         <!-- use ejs to iterate through food and drink -->
-        <div class="col-8"></div>
-        <div class="col-4"></div>
+        <div class="col-8">
+            <% burgers.forEach(burger=>{ %>
+                <div class="row">
+                    <div class="col-8">
+                        <p class="menuLabel"><%- burger.name %></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="menuLabel"><%- burger.price %></p>
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+        <div class="col-4">
+            <% drinks.forEach(drink=>{ %>
+                <div class="row">
+                    <div class="col-8">
+                        <p class="menuLabel"><%- drink.name %></p>
+                        <% if (drink.flavors){ %>
+                            <div class="row">
+                                <div class="col-6">
+                                    <% drink.flavors.forEach(flavor=> { %>
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <ul>
+                                                    <li id="drinkFlavors"><%- flavor %></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <% }) %>
+                                </div>
+                                <div class="col-6 text-center">
+                                    <% if (drink.sizes){ %>
+                                        <b>Sizes</b>
+                                        <% for(const size in drink.sizes){%>
+                                            <ul>
+                                                <li id="drinkSizes"><%- size %>  $<%- drink.sizes[size] %></li>
+                                            </ul>
+                                        <% }%>
+                                    <%}%>
+                                </div>
+                            </div>
+                        <% }%>
+                    </div>
+                    <div class="col-4">
+                        <p class="menuLabel"><%- drink.price %></p>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
     </div>
-    <%- include('./partials/footer') -%>
+<%- include('./partials/footer') -%>
