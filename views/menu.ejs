@@ -8,9 +8,12 @@
                     <div class="col-8">
                         <p class="menuLabel">
                             <%= main.name %>
+                            <% if(main.description){ %>
+                            <p class="subtext"><%= main.description %></p>
+                            <% } %>
                         </p>
                         <% if(main.flavors){ %>
-                        <p class="flavors">
+                        <p class="subtext">
                             <%= main.flavors%>
                         </p>
                         <% } %>
@@ -41,7 +44,7 @@
                             <% }) %>
                         <%}%>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 text-end">
                         <div>
                             <% if(drink.price){ %>
                             <%= drink.price.toFixed(2) %>
@@ -53,21 +56,22 @@
                     <div class="col-12">
                         <% if(drink.sizes){ %>
                             <% const sizes=drink.sizes %>
-                                <div class="row sizes text-center">
-                                    <% for(const size in sizes){%>
-                                        <div class="col">
-                                            <%= size %>
-                                        </div>
-                                    <% } %>
-                                </div>
-                                <div class="row sizes text-center">
-                                    <% for(const price in sizes){%>
-                                        <div class="col">
-                                            <%= sizes[price].toFixed(2) %>
-                                        </div>
-                                    <% } %>
-                                </div>
-                            <%}%>
+                            <div class="row sizes text-center">
+                                <% for(const size in sizes){%>
+                                    <div class="col">
+                                        <%= size %>
+                                    </div>
+                                <% } %>
+                            </div>
+                            <div class="row sizes text-center">
+                                <% for(const price in sizes){%>
+                                    <div class="col">
+                                        <%= sizes[price].toFixed(2) %>
+                                    </div>
+                                <% } %>
+                            </div>
+                            <hr>
+                        <%}%>
                     </div>
                 </div>
             <% }) %>

@@ -1,10 +1,10 @@
 const menu = {
 	burgers: [
 		{
-			name: 'Hamburger',
-			price: 2.99,
+			name: 'Double-Double',
+			price: 4.99,
 			description:
-				'Fresh beef patty with lettuce, tomato, onion, and spread on a freshly baked bun'
+				'Two beef patties, two slices of American cheese, lettuce, tomato, onion, and spread'
 		},
 		{
 			name: 'Cheeseburger',
@@ -12,10 +12,10 @@ const menu = {
 			description: 'Hamburger with a slice of American cheese'
 		},
 		{
-			name: 'Double-Double',
-			price: 4.99,
+			name: 'Hamburger',
+			price: 2.99,
 			description:
-				'Two beef patties, two slices of American cheese, lettuce, tomato, onion, and spread'
+				'Fresh beef patty with lettuce, tomato, onion, and spread on a freshly baked bun'
 		}
 	],
 	fries: [
