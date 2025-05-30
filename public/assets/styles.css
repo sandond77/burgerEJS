@@ -1,5 +1,36 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
-    color: #3e1f0d; 
+    color: #c8102e; 
+}
+
+.container-lg {
+    background-color: #c8102e;;
+}
+
+#menu {
+    border: 20px #f5f5f5 solid;
+    border-radius: 30px;
+}
+
+h1 {
+    font-weight: 900;
+    background-color: #c8102e;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.subtext {
+    vertical-align: sub;
+    font-size: smaller;
+    font-style: italic;
+}
+
+.row {
+    background-color: #ffffff;
+}
+
+br {
+    background-color: #ffffff;
 }

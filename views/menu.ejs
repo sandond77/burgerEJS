@@ -14,13 +14,13 @@
                         </p>
                         <% if(main.flavors){ %>
                         <p class="subtext">
-                            <%= main.flavors%>
+                            <%= main.flavors.join(",").replaceAll(",", " ");%>
                         </p>
                         <% } %>
                     </div>
                     <div class="col-4 text-center">
                         <p class="menuLabel">
-                            <%= main.price.toFixed(2) %>
+                            $<%= main.price.toFixed(2) %>
                         </p>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                     <div class="col-4 text-end">
                         <div>
                             <% if(drink.price){ %>
-                            <%= drink.price.toFixed(2) %>
+                            $<%= drink.price.toFixed(2) %>
                             <% } %>
                         </div>
                     </div>
@@ -66,7 +66,7 @@
                             <div class="row sizes text-center">
                                 <% for(const price in sizes){%>
                                     <div class="col">
-                                        <%= sizes[price].toFixed(2) %>
+                                        $<%= sizes[price].toFixed(2) %>
                                     </div>
                                 <% } %>
                             </div>
@@ -78,14 +78,15 @@
         </div>
     </div>
     <div class="row">
+        <h3 class="text-center">Ordering as easy as </h3>
         <div class="col-12 combos">
             <div class="row text-center">
                 <!-- ejs this area -->
                  <% combos.forEach(combo => { %>
                     <div class="col"> 
                         <p><%= combo.name %></p>
-                        <img src="" alt="<%combo.name%>">
-                        <p><%= combo.price %></p>
+                        <img class="img-fluid" src="<%=combo.url %>" alt="<%combo.name%>">
+                        <p>$<%= combo.price %></p>
                     </div>
                  <% })%>
             </div>

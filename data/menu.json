@@ -1,9 +1,9 @@
 {
     "mains": [
         {
-            "name": "Hamburger",
-            "price": 2.99,
-            "description": "Fresh beef patty with lettuce, tomato, onion, and spread on a freshly baked bun"
+            "name": "Double-Double",
+            "price": 4.99,
+            "description": "Two beef patties, two slices of American cheese, lettuce, tomato, onion, and spread"
         },
         {
             "name": "Cheeseburger",
@@ -11,9 +11,9 @@
             "description": "Hamburger with a slice of American cheese"
         },
         {
-            "name": "Double-Double",
-            "price": 4.99,
-            "description": "Two beef patties, two slices of American cheese, lettuce, tomato, onion, and spread"
+            "name": "Hamburger",
+            "price": 2.99,
+            "description": "Fresh beef patty with lettuce, tomato, onion, and spread on a freshly baked bun"
         },
         {
             "name": "French Fries",
@@ -83,17 +83,20 @@
         {
             "number": 1,
             "name": "Double-Double Meal",
-            "price": 10.99
+            "price": 10.99,
+            "url": "https://www.in-n-out.com/ResourcePackages/INNOUT/content/images/menu/double-double-meal.webp?package=INNOUT&v=2023"
         },
         {
             "number": 2,
             "name": "Cheeseburger Meal",
-            "price": 8.99
+            "price": 8.99,
+            "url": "https://www.in-n-out.com/ResourcePackages/INNOUT/content/images/menu/cheeseburger-meal.png?package=INNOUT&v=2023"
         },
         {
             "number": 3,
             "name": "Hamburger Meal",
-            "price": 7.99
+            "price": 7.99,
+            "url": "https://www.in-n-out.com/ResourcePackages/INNOUT/content/images/menu/hamburger-meal.png?package=INNOUT&v=2023"
         }
     ]
 }
