@@ -1,11 +1,26 @@
-body {
+body  {
     font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
     color: #c8102e; 
 }
 
 .container-lg {
-    background-color: #c8102e;;
+    background-color: #c8102e;
+}
+
+
+#secret {
+    color: #c8102e !important;
+}
+
+.nav-link{
+    border-radius: 10px;
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    background-color: #ffffff !important;
+    color: #c8102e !important;
 }
 
 #menu {
@@ -18,7 +33,10 @@ h1 {
     background-color: #c8102e;
     color: #ffffff;
     margin: 0;
-    padding: 0;
+}
+
+h2 {
+    padding-top: 20px;
 }
 
 .subtext {
@@ -33,4 +51,13 @@ h1 {
 
 br {
     background-color: #ffffff;
+}
+
+.beverages {
+    border: 2px red solid;
+    border-radius: 20px;
+}
+
+#combo {
+    padding-top: 20px;
 }
