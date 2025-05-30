@@ -1,7 +1,7 @@
 <%- include('./partials/header') -%>
     <div class="row">
         <!-- use ejs to iterate through food and drink -->
-        <div class="col-8 burgers">
+        <div class="col-lg-8 burgers">
             <h2 class="text-center"> Burgers </h2>
             <% mains.forEach(main=>{ %>
                 <div class="row">
@@ -28,7 +28,7 @@
                 </div>
             <% }) %>
         </div>
-        <div class="col-4 beverages">
+        <div class="col col-lg-4 beverages">
             <h2 class="text-center"> Beverages </h2>
             <% drinks.forEach(drink => { %>
                 <div class="row">
@@ -46,7 +46,7 @@
                             <% }) %>
                         <%}%>
                     </div>
-                    <div class="col-4 text-end menuLabel">
+                    <div class="col-4 menuLabel text-center">
                         <div>
                             <% if(drink.price){ %>
                             $<%= drink.price.toFixed(2) %>
@@ -81,7 +81,7 @@
             <div class="row text-center">
                 <!-- ejs this area -->
                  <% combos.forEach(combo => { %>
-                    <div class="col combo"> 
+                    <div class="col-md-4 combo"> 
                         <img class="img-fluid" src="<%=combo.url %>" alt="<%combo.name%>">
                         <p><%= combo.name %> $<%= combo.price %></p>
                     </div>
