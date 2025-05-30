@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const menu = require('./data/menu.json');
 
 app.use(express.urlencoded({ extended: true }));
@@ -9,11 +9,11 @@ app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
-	res.render('./menu.ejs', { ...menu });
+	res.render('menu', { ...menu });
 });
 
 app.get('/secret', (req, res) => {
-	res.render('./secret.ejs', { ...menu });
+	res.render('secret', { ...menu });
 });
 
 app.get(/^\/(.*)/, (req, res) => {
