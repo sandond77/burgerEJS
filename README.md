@@ -1,2 +1,2 @@
 # burgerEJS
-This is a EJS-Express app built to serve as an online ordering platform for a popular burger restaurant.
+This is a EJS-Express app built to serve recreation of a certain popular burger restaurant's menu.
