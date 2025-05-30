@@ -59,14 +59,14 @@
     ],
     "secretMenu": [
         {
-            "name": "Animal Style Burger",
+            "name": "Double Meat",
             "price": 3.99,
-            "description": "Beef patty cooked with mustard, pickles, extra spread, grilled onions, lettuce, and tomato"
+            "description": "Two 100% American beef patties, hand-leafed lettuce, tomato, spread with or without onions, stacked high on a freshly baked bun"
         },
         {
-            "name": "Protein Style",
-            "price": 3.99,
-            "description": "Burger wrapped in lettuce instead of a bun"
+            "name": "3x3",
+            "price": 4.99,
+            "description": "Four beef patties and four slices of cheese with all the fixings"
         },
         {
             "name": "4x4",
@@ -74,9 +74,29 @@
             "description": "Four beef patties and four slices of cheese with all the fixings"
         },
         {
+            "name": "Grilled Cheese",
+            "price": 1.99,
+            "description": "Two slices of melted American cheese, hand-leafed lettuce, tomato, spread with or without onions on a freshly baked bun"
+        },
+        {
+            "name": "Protein Style",
+            "price": "+1.00",
+            "description": "Your favorite burger wrapped in hand-leafed lettuce instead of a bun"
+        },
+        {
+            "name": "Animal Style Burger",
+            "price": "+1.00",
+            "description": "Your favorte burger with a beef patty cooked with mustard, pickles, extra spread, grilled onions, lettuce, and tomato"
+        },
+        {
             "name": "Animal Style Fries",
             "price": 3.99,
             "description": "Fries topped with melted cheese, spread, and grilled onions"
+        },
+        {
+            "name": "Neapolitan Shake",
+            "price": 3.99,
+            "description": "Three classic flavors—chocolate, vanilla, and strawberry—blended into one rich, creamy shake."
         }
     ],
     "combos": [
