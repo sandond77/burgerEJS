@@ -54,10 +54,18 @@ br {
 }
 
 .beverages {
-    border: 2px red solid;
+    border: 4px red solid;
     border-radius: 20px;
 }
 
 #combo {
     padding-top: 20px;
+}
+
+.menuLabel {
+    font-weight: bold;
+}
+
+ul {
+    margin-bottom:0.2em;
 }

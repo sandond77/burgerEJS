@@ -9,7 +9,9 @@
                         <p class="menuLabel">
                             <%= main.name %>
                             <% if(main.description){ %>
-                            <p class="subtext"><%= main.description %></p>
+                            <p class="subtext">
+                            <%= main.description %>
+                            </p>
                             <% } %>
                         </p>
                         <% if(main.flavors){ %>
@@ -29,9 +31,9 @@
         <div class="col-4 beverages">
             <h2 class="text-center"> Beverages </h2>
             <% drinks.forEach(drink => { %>
-                <div class="row drinks">
+                <div class="row">
                     <div class="col-8">
-                        <div>
+                        <div class="menuLabel">
                             <%= drink.name %>
                         </div> 
                         <% if(drink.flavors){%>
@@ -44,7 +46,7 @@
                             <% }) %>
                         <%}%>
                     </div>
-                    <div class="col-4 text-end">
+                    <div class="col-4 text-end menuLabel">
                         <div>
                             <% if(drink.price){ %>
                             $<%= drink.price.toFixed(2) %>
@@ -52,41 +54,36 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <% if(drink.sizes){ %>
-                            <% const sizes=drink.sizes %>
-                            <div class="row sizes text-center">
-                                <% for(const size in sizes){%>
-                                    <div class="col">
-                                        <%= size %>
-                                    </div>
-                                <% } %>
-                            </div>
-                            <div class="row sizes text-center">
-                                <% for(const price in sizes){%>
-                                    <div class="col">
-                                        $<%= sizes[price].toFixed(2) %>
-                                    </div>
-                                <% } %>
-                            </div>
-                            <hr>
-                        <%}%>
-                    </div>
+                <% if(drink.sizes){ %>
+                <% const sizes=drink.sizes %>
+                <div class="row sizes text-center">
+                    <% for(const size in sizes){%>
+                        <div class="col menuLabel">
+                            <%= size %>
+                        </div>
+                    <% } %>
                 </div>
+                <div class="row sizes text-center">
+                    <% for(const price in sizes){%>
+                        <div class="col menuLabel">
+                            $<%= sizes[price].toFixed(2) %>
+                        </div>
+                    <% } %>
+                </div>
+                <hr>
+                <%}%>
             <% }) %>
         </div>
     </div>
-    <div class="row" id="combo">
+    <div class="row">
         <h3 class="text-center">Ordering as easy as </h3>
         <div class="col-12">
             <div class="row text-center">
                 <!-- ejs this area -->
                  <% combos.forEach(combo => { %>
-                    <div class="col"> 
-                        <p><%= combo.name %></p>
+                    <div class="col combo"> 
                         <img class="img-fluid" src="<%=combo.url %>" alt="<%combo.name%>">
-                        <p>$<%= combo.price %></p>
+                        <p><%= combo.name %> $<%= combo.price %></p>
                     </div>
                  <% })%>
             </div>
