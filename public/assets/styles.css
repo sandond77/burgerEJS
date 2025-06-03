@@ -1,10 +1,10 @@
 body  {
     font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
-    color: #c8102e; 
 }
 
 .container-lg {
+    padding: 20px;
     background-color: #c8102e;
 }
 
@@ -13,7 +13,7 @@ body  {
 }
 
 .nav-link{
-    border-radius: 10px;
+    border-radius: 20px;
     color: #ffffff !important;
 }
 
@@ -24,12 +24,11 @@ body  {
 
 #menu {
     border: 20px #f5f5f5 solid;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 h1 {
     font-weight: 900;
-    background-color: #c8102e;
     color: #ffffff;
     margin: 0;
 }
@@ -52,11 +51,6 @@ br {
     background-color: #ffffff;
 }
 
-.beverages {
-    border: 4px red solid;
-    border-radius: 20px;
-}
-
 #combo {
     padding-top: 20px;
 }
@@ -68,3 +62,13 @@ br {
 ul {
     margin-bottom:0.2em;
 }
+
+#mainMenu, #secretMenu {
+    color: #c8102e;
+}
+
+@media (min-width: 992px) {
+    .beverages {
+        border: 4px red solid;
+        border-radius: 20px;
+    } }
