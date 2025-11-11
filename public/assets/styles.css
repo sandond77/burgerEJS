@@ -85,9 +85,12 @@ ul {
     margin-bottom: 20px;
 }
 
-@media (min-width: 992px) {
-    .beverages {
-        border: 4px red solid;
-        border-radius: 20px;
-    } 
+.comboMenu {
+    margin-top: 20px;
+}
+
+@media (max-width:960px) {
+    #secret {
+        color: white !important;
+    }
 }
