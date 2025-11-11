@@ -81,6 +81,10 @@ ul {
     color: #c8102e;
 }
 
+.beverages {
+    margin-bottom: 20px;
+}
+
 @media (min-width: 992px) {
     .beverages {
         border: 4px red solid;
